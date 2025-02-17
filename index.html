@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Летающие и перемещаемые изображения</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .image {
+            position: absolute;
+            width: 100px; /* Размер изображений */
+            height: auto;
+            opacity: 0.8;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
